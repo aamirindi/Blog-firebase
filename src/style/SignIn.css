@@ -1,0 +1,51 @@
+.sign-in {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.sign-in h1 {
+  font-size: 4rem;
+  padding: 3vw;
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 700;
+}
+.sign-in h1 span {
+  color: #3dd1e7;
+  text-shadow: 2px 2px #ff0000;
+}
+.sign-in .btn {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.sign-in .btn:after {
+  content: "";
+  background-color: #3dd1e7;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.sign-in .btn:hover:after {
+  top: 0px;
+  left: 0px;
+  box-shadow: 5px 10px 10px #637477;
+}

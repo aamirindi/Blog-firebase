@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
+
+.main {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 30px;
+  padding-top: 1vw;
+  border-top: 1.5px solid #979797;
+  border-radius: 50px;
+}
+
+.user-blog {
+  margin: 0vw 1vw;
+  display: flex;
+  flex-direction: row;
+}
+.user-blog h1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+}
+.container {
+  margin-top: 10px;
+  border: 2px solid;
+  width: 70%;
+  height: 100%;
+  border-radius: 12px;
+  padding: 38px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all ease-in-out 0.5s;
+  color: crimson;
+}
+
+.container:hover {
+  box-shadow: 30px 15px 15px lightgray;
+  transform: translateY(-10px);
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+.content-blog {
+  color: white;
+  padding-left: 20px;
+}
+
+.banner-image {
+  width: 20vw;
+  height: 60vh;
+  background-position: center;
+  background-size: contain;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.255);
+}
+
+.content-blog h1 {
+  font-family: "Righteous", sans-serif;
+  color: rgba(22, 21, 21, 0.98);
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.content-blog p {
+  width: 30vw;
+  max-height: 200px;
+  font-weight: 600;
+  color: #101010;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 150%;
+  letter-spacing: 2px;
+  overflow: auto;
+}
+
+.button-wrapper {
+  margin-top: 18px;
+  padding: 10px;
+}
+
+.button-wrapper .btn {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.button-wrapper .btn + .btn {
+  margin-left: 10px;
+}
+
+.button-wrapper .outline {
+  background: transparent;
+  color: rgb(18, 18, 18);
+  border: 1px solid rgba(8, 8, 8, 0.6);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.outline:hover {
+  transform: scale(1.125);
+  color: rgba(16, 15, 15, 0.9);
+  border-color: rgba(11, 11, 11, 0.9);
+  transition: all 0.3s ease;
+}
+
+.fill {
+  background: crimson;
+  color: #eeeeee;
+  filter: drop-shadow(0);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.fill:hover {
+  transform: scale(1.125);
+  border-color: rgba(10, 10, 10, 0.9);
+  filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
+  transition: all 0.3s ease;
+}
+@media (max-width: 525px) {
+  .user-blog {
+    margin-left: 6vw;
+  }
+  .user-blog h1 {
+    font-size: 1.2rem;
+  }
+  .wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .banner-image {
+    width: 20vw;
+    height: 30vh;
+  }
+  .content-blog h1 {
+    font-size: 1.2rem;
+  }
+  .content-blog p {
+    font-size: 0.6rem;
+  }
+  .button-wrapper .btn {
+    padding: 2vw;
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 425px) {
+  .wrapper {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .user-blog {
+    margin-left: 18vw;
+  }
+  .user-blog h1 {
+    font-size: 1rem;
+  }
+}
