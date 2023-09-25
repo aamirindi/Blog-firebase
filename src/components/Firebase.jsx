@@ -3,13 +3,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCk6l8L8YYdH1-cT1V_7N7gmitYAZD997Y",
-  authDomain: "blog-dd724.firebaseapp.com",
-  projectId: "blog-dd724",
-  storageBucket: "blog-dd724.appspot.com",
-  messagingSenderId: "623409967271",
-  appId: "1:623409967271:web:da092c737a6ef8fde46b82",
-  measurementId: "G-81E10PF83W",
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: "",
 };
 
 const app = initializeApp(firebaseConfig);
