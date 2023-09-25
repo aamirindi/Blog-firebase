@@ -1,6 +1,6 @@
 # Blog-firebase
 
-# Here is the link for Preview : https://fastidious-lamington-581434.netlify.app/
+# Here try the app : https://fastidious-lamington-581434.netlify.app/
 
 My project is a web application built using React, Firebase Authentication, and Firestore for the database. It offers a seamless user experience, starting with Google authentication for secure access. Upon successful login, users are directed to the blog page featuring a user-friendly navigation bar with options to 'Add Blog' and 'Log Out.'
 
