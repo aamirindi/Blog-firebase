@@ -90,57 +90,59 @@ export default function AddBlog() {
       <div className="nav-bar-add">
         <NavBar />
       </div>
-      <div className="blog-form">
-        <h2>Add Blog</h2>
-        <form onSubmit={submitHandler}>
-          <div className="input-container">
-            <label htmlFor="title">Title:</label>
-            <input
-              value={formData.title}
-              onChange={handleChange}
-              type="text"
-              id="title"
-              name="title"
-              required
-            />
-          </div>
-          <div className="input-container">
-            <label htmlFor="short-description">Short Description:</label>
-            <input
-              value={formData.shortDesc}
-              onChange={handleChange}
-              type="text"
-              id="short-description"
-              name="shortDesc"
-              required
-            />
-          </div>
-          <div className="input-container">
-            <label htmlFor="full-description">Full Description:</label>
-            <textarea
-              value={formData.fullDesc}
-              onChange={handleChange}
-              id="full-description"
-              name="fullDesc"
-              rows="4"
-              required></textarea>
-          </div>
-          <div className="input-container">
-            <label htmlFor="img-url">Image URL:</label>
-            <input
-              pattern="/^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i"
-              value={formData.img}
-              onChange={handleChange}
-              type="text"
-              id="img-url"
-              name="img"
-              required
-            />
-          </div>
-          <button type="submit" className="add-blog-button">
-            Add Blog
-          </button>
-        </form>
+      <div className="add-blog-container">
+        <div className="blog-form">
+          <h2>Add Blog</h2>
+          <form onSubmit={submitHandler}>
+            <div className="input-container">
+              <label htmlFor="title">Title:</label>
+              <input
+                value={formData.title}
+                onChange={handleChange}
+                type="text"
+                id="title"
+                name="title"
+                required
+              />
+            </div>
+            <div className="input-container">
+              <label htmlFor="short-description">Short Description:</label>
+              <input
+                value={formData.shortDesc}
+                onChange={handleChange}
+                type="text"
+                id="short-description"
+                name="shortDesc"
+                required
+              />
+            </div>
+            <div className="input-container">
+              <label htmlFor="full-description">Full Description:</label>
+              <textarea
+                value={formData.fullDesc}
+                onChange={handleChange}
+                id="full-description"
+                name="fullDesc"
+                rows="4"
+                required></textarea>
+            </div>
+            <div className="input-container">
+              <label htmlFor="img-url">Image URL:</label>
+              <input
+                pattern="/^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i"
+                value={formData.img}
+                onChange={handleChange}
+                type="text"
+                id="img-url"
+                name="img"
+                required
+              />
+            </div>
+            <button type="submit" className="add-blog-button">
+              Add Blog
+            </button>
+          </form>
+        </div>
       </div>
     </>
   );

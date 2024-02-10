@@ -1,6 +1,5 @@
 import { getAuth } from "firebase/auth";
 import "../../style/NavBar.css";
-// import useAnimation from "../../hooks/useAnimation";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -14,9 +13,6 @@ export default function NavBar() {
     navigate("/");
   };
 
-  // console.log(useLocation());
-  // console.log(getAuth());
-  // useAnimation("animation");
   return (
     <>
       <div className="user-content">

@@ -62,41 +62,47 @@ export default function Blog() {
         return (
           <>
             <div className="main">
-              <div className="user-blog">
-                <img
-                  className="user-img"
-                  // style={{ width: "20%", height: "20%" }}
-                  src={data.authorImg}
-                  alt=""
-                />
-                <h1>@{data.authorName}</h1>
-              </div>
-              <div className="container">
-                <div className="wrapper">
-                  <img className="banner-image" src={data.img} />
+              <div className="content">
+                <div className="user-blog">
+                  <img
+                    className="user-img"
+                    // style={{ width: "20%", height: "20%" }}
+                    src={data.authorImg}
+                    alt=""
+                  />
+                  <h2>@{data.authorName}</h2>
                 </div>
-                <div className="content-blog">
-                  <h1>{data.title}</h1>
-                  <hr />
-                  <br />
-                  <p>
-                    Short Desciption: <br />
-                    {data.shortDesc}
-                  </p>
-                  <div className="button-wrapper">
-                    <Link to={`/blog/${data.id}`} className="btn outline">
-                      View More
-                    </Link>
+                <br />
+                <hr />
+                <div className="container">
+                  <div className="wrapper">
+                    <img className="banner-image" src={data.img} />
+                  </div>
+                  <div className="content-blog">
+                    <h2>Title : {data.title}</h2>
                     <br />
-                    <br />
+                    <p>
+                      <span>
+                        Short Desciption: <br />
+                        <br />
+                      </span>
+                      {data.shortDesc}
+                    </p>
+                    <div className="button-wrapper">
+                      <Link to={`/blog/${data.id}`} className="btn outline">
+                        View More
+                      </Link>
+                      <br />
+                      <br />
 
-                    {data.author.id === auth.currentUser.uid && (
-                      <button
-                        onClick={() => deleteData(data.id)}
-                        className="btn fill">
-                        Delete
-                      </button>
-                    )}
+                      {data.author.id === auth.currentUser.uid && (
+                        <button
+                          onClick={() => deleteData(data.id)}
+                          className="btn fill">
+                          Delete
+                        </button>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>

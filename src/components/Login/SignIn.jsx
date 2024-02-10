@@ -17,7 +17,7 @@ export default function SignIn() {
     <div className="sign-in animation slide_up">
       <h1>
         Welcome to <br />
-        <span>Blog</span>!
+        <span>Blog</span> !
       </h1>
       <button className="btn" onClick={googleClick}>
         Google Sign In
