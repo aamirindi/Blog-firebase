@@ -1,6 +1,6 @@
 # Blog-firebase
 
-# Here try the app : https://fastidious-lamington-581434.netlify.app/
+# Live demo : https://blog-firebase-aamir.vercel.app
 
 This project is a dynamic web application built with React and powered by Firebase Authentication and Firestore. This project provides a seamless user experience starting with Google authentication, leading to a blog page featuring an intuitive navigation bar offering the ability to 'Add Blog' or 'Log Out.'
 
